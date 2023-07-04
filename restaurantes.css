@@ -1,0 +1,286 @@
+/*fuentes de google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: black;
+    background-color: rgb(38, 59, 37);
+}
+
+section{
+    padding: 50px 100px;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo img{
+    width: 60px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    padding: 8px 17px;
+    color: antiquewhite;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+}
+.navbar a:hover{
+    background-color: rgb(12, 55, 18);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+
+.lista{
+    position: relative;
+}
+
+.lista ul{
+    display: none;
+    justify-content: center;
+}
+
+.lista:hover>ul{
+    background-color: rgb(32, 32, 32);
+    border-radius: 5%;
+    display: block;
+    position: absolute;
+    top:35px;
+    left: 0;
+    justify-content: start;
+}
+
+.header-icono{
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+
+.header-icono .bx{
+    color: rgb(12, 55, 18);
+}
+.header-icono .bx:hover{
+    color: white;
+}
+
+#icono-menu{
+    color: rgb(12, 55, 18);
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
+
+.caja-busqueda{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.caja-busqueda.active{
+    top: 110%;
+    box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+    transition: 0.2s all linear;
+}
+
+.caja-busqueda input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: rgb(12, 55, 18);
+}
+.caja-busqueda input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: url(Descargar\ fondos\ de\ pantalla\ ladrillo\ negro\,\ 4k\,\ negro\,\ pared\ de\ ladrillos\,\ pared\ de\ ladrillo\ libre_\ Imágenes\ fondos\ de\ descarga\ gratuita.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home-texto h1{
+    font-size: 3.4rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-texto p{
+    font-size: 0.938rem;
+    color: white;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-color: rgb(12, 55, 18);
+    color: black;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: white;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 60px;
+}
+
+
+h2 {
+    color: rgb(255, 241, 241);
+    
+    }
+
+   
+h3 {
+color: rgb(255, 241, 241);
+}
+
+.resto1 {
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(56, 114, 61);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+}
+
+
+.resto2 {
+    width: 1200px;
+    height: 500px;
+    background-color:  rgb(56, 114, 61);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+
+}
+
+.resto3 {
+    width: 1200px;
+    height: 500px;
+    background-color:rgb(56, 114, 61);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+   
+}
+
+.resto4 {
+    width: 1200px;
+    height: 500px;
+    background-color:  rgb(56, 114, 61);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.resto5 {
+    width: 1200px;
+    height: 500px;
+    background-color:  rgb(56, 114, 61);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-seccion h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-seccion p{
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.redes a .bx{
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.2rem;
+}
+.redes a .bx:hover{
+    background-color: rgb(12, 55, 18);
+    color: white;
+}
+
+.footer-seccion h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.footer-seccion li{
+    color: rgb(255, 255, 255);
+}
+.footer-img{
+    width: 180px;
+}
